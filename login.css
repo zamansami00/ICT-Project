@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  /* background picture */
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(24, 36, 99); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('download4.png');
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  color: hsl(0, 0%, 89%);
+  margin-bottom: 20px; /* Space between title and dropdown */
+  padding: 30px;
+  font-family: "Press Start 2P";
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative; /* Ensures dropdown content is positioned relative to this */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dropdown button {
+  background-color: hsl(0, 2%, 30%);
+  color: white;
+  padding: 20px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.dropdown .content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Align dropdown content below the button */
+  left: 0;
+  background-color: hsl(0, 0%, 95%);
+  min-width: 100px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+  z-index: 1; /* Ensures dropdown content appears above other elements */
+  border-radius: 25px;
+}
+
+.dropdown:hover .content {
+  display: block; /* Keep content visible when hovering over dropdown or button */
+}
+
+.dropdown button:hover {
+  background-color: hsl(0, 5%, 19%);
+}
+
+.dropdown a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.dropdown a:hover {
+  background-color: hsl(0, 0%, 90%);
+  border-radius: 25px;
+}
+
